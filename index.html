@@ -133,10 +133,21 @@
 
 <section>
   <h2>Start Your Project</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Email Address" required />
-    <textarea rows="5" placeholder="Describe your business and website needs"></textarea>
+
+  <form action="https://formsubmit.co/Marquez.ross@myyahoo.com" method="POST">
+
+    <!-- Required hidden fields -->
+    <input type="hidden" name="_subject" value="New Website Build Submission">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- OPTIONAL: Redirect after submit -->
+    <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> -->
+
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Email Address" required />
+    <textarea name="details" rows="5" placeholder="Describe your business and website needs" required></textarea>
+
     <button class="btn" type="submit">Submit Project</button>
   </form>
 </section>
